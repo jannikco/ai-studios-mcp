@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "e8675114e8867e5f758a57c288f3d54205e7b5c6fbcd4f1aabe19c26f7beefa1",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://docs.aistudios.com/aistudioV3/getting-started"
-  ],
   "id": "ai-studios-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "AI Studios MCP setup and connection checker",
-  "description": "Generate AI Studios MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare AI Studios for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-ai-studios-mcp",
+  "sourceRevision": "763641e0f559c3fe679bf1bd78896465dcc09c6e4fd6d5c49513514ee0151619",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://docs.aistudios.com/aistudioV3/getting-started"
+  ],
+  "utility": {
+    "problem": "Prepare AI Studios and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "ai-studios",
   "appName": "AI Studios",
-  "providerDocs": "https://docs.aistudios.com/aistudioV3/getting-started",
-  "providerWebsite": "https://www.aistudios.com/",
-  "authentication": {
-    "type": "token_exchange",
-    "requiredCredentialFields": [
-      "provider_exchange_credentials"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://docs.aistudios.com/aistudioV3/reference/auth",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-ai-studios-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }

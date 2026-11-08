@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-ai-studios",
+      "description": "Connect AI agents to AI Studios using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-ai-studios/SKILL.md": "bd70813da994e9c9aeea9f95352c2356480fa96fc32cab3842e6a244575cd5d4"
+  }
+}
