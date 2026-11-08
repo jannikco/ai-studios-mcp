@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "e8675114e8867e5f758a57c288f3d54205e7b5c6fbcd4f1aabe19c26f7beefa1",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://docs.aistudios.com/aistudioV3/getting-started"
+  ],
+  "id": "ai-studios-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "AI Studios MCP setup and connection checker",
+  "description": "Generate AI Studios MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "ai-studios",
+  "appName": "AI Studios",
+  "providerDocs": "https://docs.aistudios.com/aistudioV3/getting-started",
+  "providerWebsite": "https://www.aistudios.com/",
+  "authentication": {
+    "type": "token_exchange",
+    "requiredCredentialFields": [
+      "provider_exchange_credentials"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://docs.aistudios.com/aistudioV3/reference/auth",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-ai-studios-mcp"
+}
